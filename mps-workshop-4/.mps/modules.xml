@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/mps.workshop.lang/mps.workshop.lang.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/mps.workshop.test.lang/mps.workshop.test.lang.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/mps.workshop.executor/mps.workshop.executor.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/mps.workshop.runtime/mps.workshop.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/tests/mps.workshop.test/mps.workshop.test.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
