@@ -244,5 +244,32 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="7X0VHIfSLwX">
+    <property role="3GE5qa" value="definition" />
+    <ref role="1M2myG" to="95or:5_h7KHAhBdH" resolve="FieldDefinition" />
+    <node concept="EnEH3" id="7X0VHIfSLwY" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="QB0g5" id="7X0VHIfSLx0" role="QCWH9">
+        <node concept="3clFbS" id="7X0VHIfSLx1" role="2VODD2">
+          <node concept="3SKdUt" id="7X0VHIfSLC9" role="3cqZAp">
+            <node concept="3SKdUq" id="7X0VHIfSLCa" role="3SKWNk">
+              <property role="3SKdUp" value="Ensure field names are valid Java identifiers" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="7X0VHIfSLCb" role="3cqZAp">
+            <node concept="2OqwBi" id="7X0VHIfSLCc" role="3clFbG">
+              <node concept="1Wqviy" id="7X0VHIfSLCd" role="2Oq$k0" />
+              <node concept="liA8E" id="7X0VHIfSLCe" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
+                <node concept="Xl_RD" id="7X0VHIfSLCf" role="37wK5m">
+                  <property role="Xl_RC" value="(?:\\b[_a-zA-Z]|\\B\\$)[_$a-zA-Z0-9]*+" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

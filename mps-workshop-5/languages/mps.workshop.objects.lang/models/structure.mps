@@ -111,7 +111,8 @@
       <property role="IQ2ns" value="6435959476310315451" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="context" />
-      <ref role="20lvS9" to="85g0:2LLAr9mAKpx" resolve="WVariableReference" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="85g0:Juyp1w2LZ5" resolve="WExpression" />
     </node>
     <node concept="1TJgyj" id="5_h7KHAih71" role="1TKVEi">
       <property role="IQ2ns" value="6435959476310315457" />
