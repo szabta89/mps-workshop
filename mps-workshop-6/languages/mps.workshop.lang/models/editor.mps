@@ -4,6 +4,7 @@
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
+    <use id="378e5de9-c927-48a3-84ee-c9546f8586e0" name="mps.workshop.editor.lang" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -138,6 +139,13 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
     </language>
+    <language id="378e5de9-c927-48a3-84ee-c9546f8586e0" name="mps.workshop.editor.lang">
+      <concept id="208521583782072257" name="mps.workshop.editor.lang.structure.HorizontalLineCell" flags="ng" index="2jGtU7">
+        <property id="208521583782179252" name="width" index="2jGA3M" />
+        <property id="208521583782179877" name="color" index="2jGAlz" />
+      </concept>
+      <concept id="208521583782178865" name="mps.workshop.editor.lang.structure.IconCell" flags="ng" index="2jGA5R" />
+    </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
       <concept id="1381973545438177151" name="com.mbeddr.mpsutil.grammarcells.structure.StringLiteralTokenizer" flags="ng" index="bYqrx" />
       <concept id="1716599163375643733" name="com.mbeddr.mpsutil.grammarcells.structure.BracketsCell" flags="ng" index="drBAd">
@@ -197,11 +205,19 @@
   <node concept="24kQdi" id="Juyp1w2Jtc">
     <ref role="1XX52x" to="85g0:Juyp1w2Jt3" resolve="WWorksheet" />
     <node concept="3EZMnI" id="Juyp1w2Lr6" role="2wV5jI">
+      <node concept="2jGA5R" id="b$OkqhlVd_" role="3EZMnx" />
       <node concept="3F0ifn" id="Juyp1w2LvG" role="3EZMnx">
         <property role="3F0ifm" value="Worksheet" />
       </node>
       <node concept="3F0A7n" id="Juyp1w2Lwp" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="2jGtU7" id="b$OkqhlMjj" role="3EZMnx">
+        <property role="2jGA3M" value="3" />
+        <property role="2jGAlz" value="BLUE" />
+        <node concept="pVoyu" id="b$OkqhlOvZ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="l2Vlx" id="Juyp1w2Lr7" role="2iSdaV" />
       <node concept="3F2HdR" id="Juyp1w2Jtl" role="3EZMnx">

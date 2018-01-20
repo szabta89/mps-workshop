@@ -34,6 +34,7 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="4323500428121233431" name="jetbrains.mps.lang.editor.structure.EditorCellId" flags="ng" index="2SqB2G" />
       <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
         <property id="1186403771423" name="style" index="Vbekb" />
       </concept>
@@ -70,6 +71,9 @@
       </concept>
       <concept id="7991336459489871999" name="jetbrains.mps.lang.editor.structure.IOutputConceptSubstituteMenuPart" flags="ng" index="3EoQpk">
         <reference id="7991336459489872009" name="outputConcept" index="3EoQqy" />
+      </concept>
+      <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
+        <child id="4323500428121274054" name="id" index="2SqHTX" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
@@ -248,6 +252,9 @@
       </node>
       <node concept="3F0A7n" id="Juyp1w2LZA" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="2SqB2G" id="1WKLEm1IcYe" role="2SqHTX">
+          <property role="TrG5h" value="name" />
+        </node>
       </node>
       <node concept="3F0ifn" id="Juyp1w2LZN" role="3EZMnx">
         <property role="3F0ifm" value="=" />
