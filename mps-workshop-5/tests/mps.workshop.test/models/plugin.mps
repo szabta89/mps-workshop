@@ -30,6 +30,9 @@
         <property id="4960714519531664802" name="value" index="3k6kCK" />
       </concept>
       <concept id="4960714519538814228" name="mps.workshop.lang.structure.WEqualsExpression" flags="ng" index="3lV3a6" />
+      <concept id="855272232427158454" name="mps.workshop.lang.structure.WParensExpression" flags="ng" index="1FNv8A">
+        <child id="855272232427158458" name="expression" index="1FNv8E" />
+      </concept>
       <concept id="855272232427031612" name="mps.workshop.lang.structure.WPlusExpression" flags="ng" index="1FNKmG" />
       <concept id="855272232427031658" name="mps.workshop.lang.structure.WMinusExpression" flags="ng" index="1FNKnU" />
       <concept id="855272232427032244" name="mps.workshop.lang.structure.WMulExpression" flags="ng" index="1FNKs$" />
@@ -69,42 +72,44 @@
     </node>
     <node concept="1FP7V0" id="Juyp1w2MIA" role="1FP7V2">
       <property role="TrG5h" value="b" />
-      <node concept="1FNKmG" id="2LLAr9mBB8t" role="1FPppm">
-        <node concept="1FNKnU" id="2LLAr9mBB8u" role="1FO1jD">
-          <node concept="1FNKmG" id="2LLAr9mBB8v" role="1FO1jD">
-            <node concept="1FNKmG" id="2LLAr9mBB8w" role="1FO1jD">
-              <node concept="1FPhOj" id="Juyp1w4Ju2" role="1FO1jD">
-                <property role="1FPhOn" value="4" />
-              </node>
-              <node concept="1FPhOj" id="Juyp1w4Jub" role="1FO1jG">
-                <property role="1FPhOn" value="5" />
-              </node>
+      <node concept="1FNKnU" id="7X0VHIfXiNf" role="1FPppm">
+        <node concept="1FNKmG" id="7X0VHIfXiNg" role="1FO1jD">
+          <node concept="1FNKmG" id="7X0VHIfXiNh" role="1FO1jD">
+            <node concept="1FPhOj" id="Juyp1w4Ju2" role="1FO1jD">
+              <property role="1FPhOn" value="4" />
             </node>
-            <node concept="1FNLOq" id="2LLAr9mBB8x" role="1FO1jG">
-              <node concept="1FNKs$" id="2LLAr9mBB8y" role="1FO1jD">
-                <node concept="1FNKs$" id="2LLAr9mBB8z" role="1FO1jD">
-                  <node concept="1FPhOj" id="Juyp1w4Jum" role="1FO1jD">
-                    <property role="1FPhOn" value="4" />
-                  </node>
-                  <node concept="1FPhOj" id="Juyp1w4Juu" role="1FO1jG">
-                    <property role="1FPhOn" value="1" />
-                  </node>
-                </node>
-                <node concept="1FPhOj" id="Juyp1w4JuI" role="1FO1jG">
-                  <property role="1FPhOn" value="6" />
-                </node>
-              </node>
-              <node concept="1FPhOj" id="Juyp1w4JVy" role="1FO1jG">
-                <property role="1FPhOn" value="9" />
-              </node>
+            <node concept="1FPhOj" id="Juyp1w4Jub" role="1FO1jG">
+              <property role="1FPhOn" value="5" />
             </node>
           </node>
-          <node concept="1FPhOj" id="Juyp1w4Kol" role="1FO1jG">
-            <property role="1FPhOn" value="12" />
+          <node concept="1FNLOq" id="7X0VHIfXiNi" role="1FO1jG">
+            <node concept="1FNKs$" id="7X0VHIfXiNj" role="1FO1jD">
+              <node concept="1FNKs$" id="7X0VHIfXiNk" role="1FO1jD">
+                <node concept="1FPhOj" id="Juyp1w4Jum" role="1FO1jD">
+                  <property role="1FPhOn" value="4" />
+                </node>
+                <node concept="1FPhOj" id="Juyp1w4Juu" role="1FO1jG">
+                  <property role="1FPhOn" value="1" />
+                </node>
+              </node>
+              <node concept="1FPhOj" id="Juyp1w4JuI" role="1FO1jG">
+                <property role="1FPhOn" value="6" />
+              </node>
+            </node>
+            <node concept="1FPhOj" id="Juyp1w4JVy" role="1FO1jG">
+              <property role="1FPhOn" value="9" />
+            </node>
           </node>
         </node>
-        <node concept="1UUDZj" id="1WKLEm1IRvN" role="1FO1jG">
-          <ref role="1UUDVi" node="Juyp1w2MDw" resolve="a" />
+        <node concept="1FNv8A" id="7X0VHIfXiNl" role="1FO1jG">
+          <node concept="1FNKmG" id="7X0VHIfXiNm" role="1FNv8E">
+            <node concept="1FPhOj" id="Juyp1w4Kol" role="1FO1jD">
+              <property role="1FPhOn" value="12" />
+            </node>
+            <node concept="1UUDZj" id="1WKLEm1IRvN" role="1FO1jG">
+              <ref role="1UUDVi" node="Juyp1w2MDw" resolve="a" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
