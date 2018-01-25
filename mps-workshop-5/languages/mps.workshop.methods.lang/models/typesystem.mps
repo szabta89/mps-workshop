@@ -166,5 +166,41 @@
       <ref role="1YaFvo" to="696d:7X0VHIg1iB7" resolve="MethodCall" />
     </node>
   </node>
+  <node concept="1YbPZF" id="7X0VHIg1WYf">
+    <property role="TrG5h" value="typeof_ParameterReference" />
+    <property role="3GE5qa" value="expression" />
+    <node concept="3clFbS" id="7X0VHIg1WYg" role="18ibNy">
+      <node concept="1Z5TYs" id="7X0VHIg1Xpa" role="3cqZAp">
+        <node concept="mw_s8" id="7X0VHIg1Y6j" role="1ZfhKB">
+          <node concept="1Z2H0r" id="7X0VHIg1Y65" role="mwGJk">
+            <node concept="2OqwBi" id="7X0VHIg1Y_V" role="1Z2MuG">
+              <node concept="2OqwBi" id="7X0VHIg1Yeq" role="2Oq$k0">
+                <node concept="1YBJjd" id="7X0VHIg1Y6$" role="2Oq$k0">
+                  <ref role="1YBMHb" node="7X0VHIg1WYi" resolve="parameterReference" />
+                </node>
+                <node concept="3TrEf2" id="7X0VHIg1Ymr" role="2OqNvi">
+                  <ref role="3Tt5mk" to="696d:7X0VHIg1Ntl" resolve="targetParameter" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="7X0VHIg1YLs" role="2OqNvi">
+                <ref role="3Tt5mk" to="696d:7X0VHIfVOoq" resolve="parameterType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="7X0VHIg1Xpd" role="1ZfhK$">
+          <node concept="1Z2H0r" id="7X0VHIg1WYS" role="mwGJk">
+            <node concept="1YBJjd" id="7X0VHIg1WYT" role="1Z2MuG">
+              <ref role="1YBMHb" node="7X0VHIg1WYi" resolve="parameterReference" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7X0VHIg1WYi" role="1YuTPh">
+      <property role="TrG5h" value="parameterReference" />
+      <ref role="1YaFvo" to="696d:7X0VHIg1Ns3" resolve="ParameterReference" />
+    </node>
+  </node>
 </model>
 

@@ -74,6 +74,9 @@
     <node concept="PrWs8" id="7X0VHIfZpP3" role="PzmwI">
       <ref role="PrY4T" to="95or:7X0VHIfXIq_" resolve="ClassMember" />
     </node>
+    <node concept="PrWs8" id="7X0VHIg1NuV" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7X0VHIfVOiI">
     <property role="EcuMT" value="9169591468106400942" />
@@ -122,6 +125,22 @@
       <property role="20lbJX" value="1" />
       <property role="20kJfa" value="targetMethod" />
       <ref role="20lvS9" node="7X0VHIfVOiH" resolve="MethodDefinition" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7X0VHIg1Ns3">
+    <property role="EcuMT" value="9169591468107970307" />
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="ParameterReference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7X0VHIg1Ntl" role="1TKVEi">
+      <property role="IQ2ns" value="9169591468107970389" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="targetParameter" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7X0VHIfVOiI" resolve="ParameterDefinition" />
+    </node>
+    <node concept="PrWs8" id="7X0VHIg1WHV" role="PzmwI">
+      <ref role="PrY4T" to="85g0:Juyp1w2LZ5" resolve="WExpression" />
     </node>
   </node>
 </model>
