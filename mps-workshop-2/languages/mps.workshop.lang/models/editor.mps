@@ -7,7 +7,7 @@
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
-    <import index="85g0" ref="r:3255fe94-9102-4828-b2d9-432a6ecad106(mps.workshop.lang.structure)" implicit="true" />
+    <import index="85g0" ref="r:3255fe94-9102-4828-b2d9-432a6ecad106(mps.workshop.lang.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="6r3z" ref="r:8c11527c-f00f-4af2-9187-3917731b6126(mps.workshop.lang.behavior)" implicit="true" />
   </imports>
@@ -197,8 +197,8 @@
   <node concept="24kQdi" id="Juyp1w2V2H">
     <property role="3GE5qa" value="expression" />
     <ref role="1XX52x" to="85g0:Juyp1w2Ti3" resolve="NumberLiteral" />
-    <node concept="1kIj98" id="5o_AG9lODNx" role="2wV5jI">
-      <node concept="3F0A7n" id="5o_AG9lODNE" role="1kIj9b">
+    <node concept="1kIj98" id="53Tmle2rhiD" role="2wV5jI">
+      <node concept="3F0A7n" id="4AQJtfMIf16" role="1kIj9b">
         <ref role="1NtTu8" to="85g0:Juyp1w2Ti7" resolve="value" />
       </node>
     </node>
@@ -285,6 +285,10 @@
   <node concept="3p36aQ" id="5o_AG9lP4Qt">
     <property role="3GE5qa" value="expression" />
     <ref role="aqKnT" to="85g0:Juyp1w2Ti3" resolve="NumberLiteral" />
+  </node>
+  <node concept="3p36aQ" id="4AQJtfMHLzX">
+    <property role="3GE5qa" value="statement" />
+    <ref role="aqKnT" to="85g0:Juyp1w2Jth" resolve="ExpressionStatement" />
   </node>
 </model>
 
