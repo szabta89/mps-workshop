@@ -28,6 +28,7 @@
         <language slang="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" version="0" />
         <language slang="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" version="0" />
         <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="8" />
+        <language slang="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" version="0" />
         <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
       </languageVersions>
       <dependencyVersions>
@@ -38,16 +39,16 @@
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
         <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
         <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
+        <module reference="c9c683f9-1916-4ea4-bc6e-ec5b2a10659d(mps.workshop.lang)" version="0" />
         <module reference="b14baf3e-d365-4b95-af3e-1bd0397c7c55(mps.workshop.methods.lang)" version="0" />
         <module reference="70360305-abb9-4eec-a895-44ebc01e2206(mps.workshop.methods.lang#9169591468106400939)" version="0" />
+        <module reference="b7056d5f-55b8-4462-92f4-3bd3f8af9c29(mps.workshop.objects.lang)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>
   </generators>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">b7056d5f-55b8-4462-92f4-3bd3f8af9c29(mps.workshop.objects.lang)</dependency>
-    <dependency reexport="false">c9c683f9-1916-4ea4-bc6e-ec5b2a10659d(mps.workshop.lang)</dependency>
     <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
   </dependencies>
   <languageVersions>
@@ -80,6 +81,7 @@
     <language slang="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" version="0" />
     <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="8" />
     <language slang="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" version="5" />
+    <language slang="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" version="0" />
     <language slang="l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen" version="1" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
     <language slang="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" version="1" />
@@ -98,6 +100,9 @@
     <module reference="b14baf3e-d365-4b95-af3e-1bd0397c7c55(mps.workshop.methods.lang)" version="0" />
     <module reference="b7056d5f-55b8-4462-92f4-3bd3f8af9c29(mps.workshop.objects.lang)" version="0" />
   </dependencyVersions>
-  <extendedLanguages />
+  <extendedLanguages>
+    <extendedLanguage>b7056d5f-55b8-4462-92f4-3bd3f8af9c29(mps.workshop.objects.lang)</extendedLanguage>
+    <extendedLanguage>c9c683f9-1916-4ea4-bc6e-ec5b2a10659d(mps.workshop.lang)</extendedLanguage>
+  </extendedLanguages>
 </language>
 

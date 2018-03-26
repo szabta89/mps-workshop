@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:463f2f0d-2452-44ed-9730-ad165a96f360(mps.workshop.test.objects)">
+<model ref="r:463f2f0d-2452-44ed-9730-ad165a96f360(mps.workshop.test.objects)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <use id="b7056d5f-55b8-4462-92f4-3bd3f8af9c29" name="mps.workshop.objects.lang" version="0" />
@@ -9,7 +9,7 @@
   <registry>
     <language id="b7056d5f-55b8-4462-92f4-3bd3f8af9c29" name="mps.workshop.objects.lang">
       <concept id="6435959476310143848" name="mps.workshop.objects.lang.structure.ClassDefinition" flags="ng" index="Z5QLz">
-        <child id="6435959476310143849" name="fields" index="Z5QLy" />
+        <child id="6435959476310143849" name="members" index="Z5QLy" />
         <child id="8577231824669390218" name="extends" index="3Q$4tG" />
       </concept>
       <concept id="6435959476310143853" name="mps.workshop.objects.lang.structure.FieldDefinition" flags="ng" index="Z5QLA">

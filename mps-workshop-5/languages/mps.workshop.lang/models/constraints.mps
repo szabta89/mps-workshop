@@ -130,7 +130,7 @@
               <node concept="liA8E" id="4jnZTagNLKN" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
                 <node concept="Xl_RD" id="4jnZTagNLKO" role="37wK5m">
-                  <property role="Xl_RC" value="(\\\\.|[^\\\\\&quot;])*" />
+                  <property role="Xl_RC" value="[^\&quot;]*" />
                 </node>
               </node>
             </node>
