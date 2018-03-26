@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:46cf5cb2-98a9-4441-ac05-e58ffbf95de7(mps.workshop.objects.sample)">
+<model ref="r:463f2f0d-2452-44ed-9730-ad165a96f360(mps.workshop.test.objects)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <use id="b7056d5f-55b8-4462-92f4-3bd3f8af9c29" name="mps.workshop.objects.lang" version="0" />
-    <use id="c9c683f9-1916-4ea4-bc6e-ec5b2a10659d" name="mps.workshop.lang" version="-1" />
+    <use id="c9c683f9-1916-4ea4-bc6e-ec5b2a10659d" name="mps.workshop.lang" version="0" />
   </languages>
   <imports />
   <registry>
     <language id="b7056d5f-55b8-4462-92f4-3bd3f8af9c29" name="mps.workshop.objects.lang">
       <concept id="6435959476310143848" name="mps.workshop.objects.lang.structure.ClassDefinition" flags="ng" index="Z5QLz">
-        <child id="6435959476310143849" name="fields" index="Z5QLy" />
+        <child id="6435959476310143849" name="members" index="Z5QLy" />
         <child id="8577231824669390218" name="extends" index="3Q$4tG" />
       </concept>
       <concept id="6435959476310143853" name="mps.workshop.objects.lang.structure.FieldDefinition" flags="ng" index="Z5QLA">
@@ -67,23 +67,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="Z5QLz" id="7X0VHIfRrRw">
-    <property role="TrG5h" value="SuperExample" />
-    <node concept="Z5QLA" id="7X0VHIfRrRx" role="Z5QLy">
-      <property role="TrG5h" value="superDouble" />
-      <node concept="3KzAix" id="7X0VHIfRrRH" role="Z5QLV" />
-    </node>
-  </node>
-  <node concept="Z5QLz" id="7X0VHIfRrSc">
-    <property role="TrG5h" value="SubExample" />
-    <node concept="Z5QLA" id="7X0VHIfRrSd" role="Z5QLy">
-      <property role="TrG5h" value="subInt" />
-      <node concept="3KzAiw" id="7X0VHIfRrSy" role="Z5QLV" />
-    </node>
-    <node concept="3Q$4tx" id="7X0VHIfRrSn" role="3Q$4tG">
-      <ref role="3Q$4tI" node="7X0VHIfRrRw" resolve="SuperExample" />
-    </node>
-  </node>
   <node concept="Z5QLz" id="7X0VHIfRrSQ">
     <property role="TrG5h" value="ClassExample" />
     <node concept="Z5QLA" id="7X0VHIfRrSR" role="Z5QLy">
@@ -198,6 +181,23 @@
       </node>
     </node>
     <node concept="1FP7Vv" id="7X0VHIfSk6x" role="1FP7V2" />
+  </node>
+  <node concept="Z5QLz" id="7X0VHIfRrSc">
+    <property role="TrG5h" value="SubExample" />
+    <node concept="Z5QLA" id="7X0VHIfRrSd" role="Z5QLy">
+      <property role="TrG5h" value="subInt" />
+      <node concept="3KzAiw" id="7X0VHIfRrSy" role="Z5QLV" />
+    </node>
+    <node concept="3Q$4tx" id="7X0VHIfRrSn" role="3Q$4tG">
+      <ref role="3Q$4tI" node="7X0VHIfRrRw" resolve="SuperExample" />
+    </node>
+  </node>
+  <node concept="Z5QLz" id="7X0VHIfRrRw">
+    <property role="TrG5h" value="SuperExample" />
+    <node concept="Z5QLA" id="7X0VHIfRrRx" role="Z5QLy">
+      <property role="TrG5h" value="superDouble" />
+      <node concept="3KzAix" id="7X0VHIfRrRH" role="Z5QLV" />
+    </node>
   </node>
 </model>
 
