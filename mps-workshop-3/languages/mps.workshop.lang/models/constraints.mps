@@ -65,7 +65,7 @@
   </registry>
   <node concept="1M2fIO" id="Juyp1w2Tia">
     <property role="3GE5qa" value="expression" />
-    <ref role="1M2myG" to="85g0:Juyp1w2Ti3" resolve="NumberLiteral" />
+    <ref role="1M2myG" to="85g0:Juyp1w2Ti3" resolve="WNumberLiteral" />
     <node concept="EnEH3" id="Juyp1w2Tib" role="1MhHOB">
       <ref role="EomxK" to="85g0:Juyp1w2Ti7" resolve="value" />
       <node concept="QB0g5" id="Juyp1w2Tie" role="QCWH9">
@@ -75,7 +75,7 @@
               <node concept="22lmx$" id="Juyp1w2UCy" role="3uHU7B">
                 <node concept="2OqwBi" id="Juyp1w36S1" role="3uHU7B">
                   <node concept="35c_gC" id="Juyp1w36S2" role="2Oq$k0">
-                    <ref role="35c_gD" to="85g0:Juyp1w2Ti3" resolve="NumberLiteral" />
+                    <ref role="35c_gD" to="85g0:Juyp1w2Ti3" resolve="WNumberLiteral" />
                   </node>
                   <node concept="2qgKlT" id="Juyp1w36S3" role="2OqNvi">
                     <ref role="37wK5l" to="6r3z:4rZeNQ6OfoS" resolve="isZero" />
@@ -84,7 +84,7 @@
                 </node>
                 <node concept="2OqwBi" id="Juyp1w370S" role="3uHU7w">
                   <node concept="35c_gC" id="Juyp1w370T" role="2Oq$k0">
-                    <ref role="35c_gD" to="85g0:Juyp1w2Ti3" resolve="NumberLiteral" />
+                    <ref role="35c_gD" to="85g0:Juyp1w2Ti3" resolve="WNumberLiteral" />
                   </node>
                   <node concept="2qgKlT" id="Juyp1w370U" role="2OqNvi">
                     <ref role="37wK5l" to="6r3z:4rZeNQ6Og4r" resolve="isInteger" />
@@ -94,7 +94,7 @@
               </node>
               <node concept="2OqwBi" id="Juyp1w37hZ" role="3uHU7w">
                 <node concept="35c_gC" id="Juyp1w37i0" role="2Oq$k0">
-                  <ref role="35c_gD" to="85g0:Juyp1w2Ti3" resolve="NumberLiteral" />
+                  <ref role="35c_gD" to="85g0:Juyp1w2Ti3" resolve="WNumberLiteral" />
                 </node>
                 <node concept="2qgKlT" id="Juyp1w37i1" role="2OqNvi">
                   <ref role="37wK5l" to="6r3z:4rZeNQ6Og7j" resolve="isReal" />
@@ -109,7 +109,7 @@
   </node>
   <node concept="1M2fIO" id="4jnZTagNLq$">
     <property role="3GE5qa" value="expression" />
-    <ref role="1M2myG" to="85g0:4jnZTagNFmn" resolve="StringLiteral" />
+    <ref role="1M2myG" to="85g0:4jnZTagNFmn" resolve="WStringLiteral" />
     <node concept="EnEH3" id="4jnZTagNLq_" role="1MhHOB">
       <ref role="EomxK" to="85g0:4jnZTagNFmy" resolve="value" />
       <node concept="QB0g5" id="4jnZTagNLqB" role="QCWH9">
@@ -120,7 +120,7 @@
               <node concept="liA8E" id="4jnZTagNLKN" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
                 <node concept="Xl_RD" id="4jnZTagNLKO" role="37wK5m">
-                  <property role="Xl_RC" value="(\\\\.|[^\\\\\&quot;])*" />
+                  <property role="Xl_RC" value="[^\&quot;]*" />
                 </node>
               </node>
             </node>
