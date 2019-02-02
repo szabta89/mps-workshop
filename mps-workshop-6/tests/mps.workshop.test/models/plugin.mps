@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c9c683f9-1916-4ea4-bc6e-ec5b2a10659d" name="mps.workshop.lang" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <use id="0db271ab-fc35-4186-b895-e3b74a8cde66" name="mps.workshop.test.lang" version="0" />
     <use id="b7f6a619-c488-46e1-ad22-b6281383750c" name="mps.workshop.sm.lang" version="0" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
