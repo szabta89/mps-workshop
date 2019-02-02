@@ -2,7 +2,7 @@
 <model ref="r:8c11527c-f00f-4af2-9187-3917731b6126(mps.workshop.lang.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="daafa647-f1f7-4b0b-b096-69cd7c8408c0" name="jetbrains.mps.baseLanguage.regexp" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
@@ -122,14 +122,14 @@
     </language>
   </registry>
   <node concept="13h7C7" id="Juyp1w2SZb">
-    <ref role="13h7C2" to="85g0:Juyp1w2Jt3" resolve="Worksheet" />
+    <ref role="13h7C2" to="85g0:Juyp1w2Jt3" resolve="WWorksheet" />
     <node concept="13hLZK" id="Juyp1w2SZc" role="13h7CW">
       <node concept="3clFbS" id="Juyp1w2SZd" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="Juyp1w2TBP">
     <property role="3GE5qa" value="expression" />
-    <ref role="13h7C2" to="85g0:Juyp1w2Ti3" resolve="NumberLiteral" />
+    <ref role="13h7C2" to="85g0:Juyp1w2Ti3" resolve="WNumberLiteral" />
     <node concept="13i0hz" id="4rZeNQ6OfoS" role="13h7CS">
       <property role="TrG5h" value="isZero" />
       <property role="2Ki8OM" value="true" />
@@ -296,7 +296,7 @@
   </node>
   <node concept="13h7C7" id="Juyp1w3F2Z">
     <property role="3GE5qa" value="expression" />
-    <ref role="13h7C2" to="85g0:Juyp1w3DPP" resolve="BinaryExpression" />
+    <ref role="13h7C2" to="85g0:Juyp1w3DPP" resolve="WBinaryExpression" />
     <node concept="13i0hz" id="Juyp1w3F3a" role="13h7CS">
       <property role="TrG5h" value="getPriority" />
       <property role="13i0it" value="true" />
@@ -333,7 +333,7 @@
   </node>
   <node concept="13h7C7" id="Juyp1w4oUP">
     <property role="3GE5qa" value="expression" />
-    <ref role="13h7C2" to="85g0:Juyp1w4oUO" resolve="MulExpression" />
+    <ref role="13h7C2" to="85g0:Juyp1w4oUO" resolve="WMulExpression" />
     <node concept="13hLZK" id="Juyp1w4oUQ" role="13h7CW">
       <node concept="3clFbS" id="Juyp1w4oUR" role="2VODD2" />
     </node>
@@ -356,7 +356,7 @@
   </node>
   <node concept="13h7C7" id="Juyp1w4pib">
     <property role="3GE5qa" value="expression" />
-    <ref role="13h7C2" to="85g0:Juyp1w4pia" resolve="DivExpression" />
+    <ref role="13h7C2" to="85g0:Juyp1w4pia" resolve="WDivExpression" />
     <node concept="13hLZK" id="Juyp1w4pic" role="13h7CW">
       <node concept="3clFbS" id="Juyp1w4pid" role="2VODD2" />
     </node>
@@ -379,7 +379,7 @@
   </node>
   <node concept="13h7C7" id="4jnZTaheWP7">
     <property role="3GE5qa" value="expression" />
-    <ref role="13h7C2" to="85g0:Juyp1w4oKW" resolve="PlusExpression" />
+    <ref role="13h7C2" to="85g0:Juyp1w4oKW" resolve="WPlusExpression" />
     <node concept="13hLZK" id="4jnZTaheWP8" role="13h7CW">
       <node concept="3clFbS" id="4jnZTaheWP9" role="2VODD2" />
     </node>
@@ -402,7 +402,7 @@
   </node>
   <node concept="13h7C7" id="4jnZTaheYky">
     <property role="3GE5qa" value="expression" />
-    <ref role="13h7C2" to="85g0:Juyp1w4oLE" resolve="MinusExpression" />
+    <ref role="13h7C2" to="85g0:Juyp1w4oLE" resolve="WMinusExpression" />
     <node concept="13i0hz" id="4jnZTaheYkH" role="13h7CS">
       <property role="TrG5h" value="getPriority" />
       <property role="13i0it" value="false" />
@@ -425,7 +425,7 @@
   </node>
   <node concept="13h7C7" id="4jnZTaheYla">
     <property role="3GE5qa" value="expression" />
-    <ref role="13h7C2" to="85g0:4jnZTaheWOk" resolve="EqualsExpression" />
+    <ref role="13h7C2" to="85g0:4jnZTaheWOk" resolve="WEqualsExpression" />
     <node concept="13i0hz" id="4jnZTaheYll" role="13h7CS">
       <property role="TrG5h" value="getPriority" />
       <property role="13i0it" value="false" />
@@ -448,7 +448,7 @@
   </node>
   <node concept="13h7C7" id="4jnZTaheYm3">
     <property role="3GE5qa" value="expression" />
-    <ref role="13h7C2" to="85g0:4jnZTaheWOh" resolve="LessExpression" />
+    <ref role="13h7C2" to="85g0:4jnZTaheWOh" resolve="WLessExpression" />
     <node concept="13i0hz" id="4jnZTaheYme" role="13h7CS">
       <property role="TrG5h" value="getPriority" />
       <property role="13i0it" value="false" />
@@ -471,7 +471,7 @@
   </node>
   <node concept="13h7C7" id="4jnZTaheYmW">
     <property role="3GE5qa" value="expression" />
-    <ref role="13h7C2" to="85g0:4jnZTaheWOj" resolve="GreaterExpression" />
+    <ref role="13h7C2" to="85g0:4jnZTaheWOj" resolve="WGreaterExpression" />
     <node concept="13i0hz" id="4jnZTaheYn7" role="13h7CS">
       <property role="TrG5h" value="getPriority" />
       <property role="13i0it" value="false" />
