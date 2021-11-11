@@ -1,1 +1,1 @@
-mps workshop material
+Reference implementation of the MPS workshop exercises. 
