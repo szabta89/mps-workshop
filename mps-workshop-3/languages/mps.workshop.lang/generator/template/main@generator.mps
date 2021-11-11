@@ -68,8 +68,11 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
-        <reference id="1171315804605" name="concept" index="2RRcyH" />
+        <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
       </concept>
       <concept id="1206482823744" name="jetbrains.mps.lang.smodel.structure.Model_AddRootOperation" flags="nn" index="3BYIHo">
         <child id="1206482823746" name="nodeArgument" index="3BYIHq" />
@@ -102,7 +105,7 @@
   </node>
   <node concept="1pmfR0" id="7P2vbT3q0v1">
     <property role="TrG5h" value="compilation" />
-    <property role="1v3f2W" value="pre_processing" />
+    <property role="1v3f2W" value="hpv1Zf2/pre_processing" />
     <property role="1v3jST" value="true" />
     <node concept="1pplIY" id="7P2vbT3q0v2" role="1pqMTA">
       <node concept="3clFbS" id="7P2vbT3q0v3" role="2VODD2">
@@ -113,7 +116,9 @@
           <node concept="2OqwBi" id="7P2vbT3q2mF" role="2GsD0m">
             <node concept="1Q6Npb" id="7P2vbT3qTsH" role="2Oq$k0" />
             <node concept="2RRcyG" id="7P2vbT3q2rF" role="2OqNvi">
-              <ref role="2RRcyH" to="85g0:Juyp1w2Jt3" resolve="WWorksheet" />
+              <node concept="chp4Y" id="1hQKKlc9bXZ" role="3MHsoP">
+                <ref role="cht4Q" to="85g0:Juyp1w2Jt3" resolve="WWorksheet" />
+              </node>
             </node>
           </node>
           <node concept="3clFbS" id="7P2vbT3q1lp" role="2LFqv$">
