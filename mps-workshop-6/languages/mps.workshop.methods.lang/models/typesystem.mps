@@ -2,7 +2,7 @@
 <model ref="r:ab67200d-4592-463d-9aaa-9e965e168d5c(mps.workshop.methods.lang.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -22,9 +22,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -98,7 +96,7 @@
               <ref role="2pJxaS" to="95or:7s8sIq1Cevn" resolve="ClassType" />
               <node concept="2pIpSj" id="7X0VHIfZR28" role="2pJxcM">
                 <ref role="2pIpSl" to="95or:7s8sIq1Cevo" resolve="forClass" />
-                <node concept="36biLy" id="7X0VHIfZR2y" role="2pJxcZ">
+                <node concept="36biLy" id="7X0VHIfZR2y" role="28nt2d">
                   <node concept="2OqwBi" id="7X0VHIfZRbi" role="36biLW">
                     <node concept="1YBJjd" id="7X0VHIfZR2H" role="2Oq$k0">
                       <ref role="1YBMHb" node="7X0VHIfZQ_2" resolve="thisExpression" />
