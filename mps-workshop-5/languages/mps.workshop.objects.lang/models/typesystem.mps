@@ -2,10 +2,10 @@
 <model ref="r:60070c4f-4b13-4a97-b629-9576b0975fcb(mps.workshop.objects.lang.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -53,11 +53,8 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -69,9 +66,7 @@
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
-      </concept>
-      <concept id="5455284157993911097" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitPart" flags="ng" index="2pJxcK">
-        <child id="5455284157993911094" name="expression" index="2pJxcZ" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
@@ -95,13 +90,13 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1176543928247" name="jetbrains.mps.lang.typesystem.structure.IsSubtypeExpression" flags="nn" index="3JuTUA">
         <child id="1176543945045" name="subtypeExpression" index="3JuY14" />
         <child id="1176543950311" name="supertypeExpression" index="3JuZjQ" />
@@ -148,6 +143,14 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
@@ -165,8 +168,40 @@
     <property role="3GE5qa" value="expression" />
     <node concept="3clFbS" id="5_h7KHAiGOe" role="18ibNy">
       <node concept="3SKdUt" id="7X0VHIfR2Ji" role="3cqZAp">
-        <node concept="3SKdUq" id="7X0VHIfR2Jk" role="3SKWNk">
-          <property role="3SKdUp" value="The type of a DotExpression is the type of its target" />
+        <node concept="1PaTwC" id="5W_NWFc9Mx3" role="1aUNEU">
+          <node concept="3oM_SD" id="5W_NWFc9Mx4" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="5W_NWFc9Mx5" role="1PaTwD">
+            <property role="3oM_SC" value="type" />
+          </node>
+          <node concept="3oM_SD" id="5W_NWFc9Mx6" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5W_NWFc9Mx7" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="5W_NWFc9Mx8" role="1PaTwD">
+            <property role="3oM_SC" value="DotExpression" />
+          </node>
+          <node concept="3oM_SD" id="5W_NWFc9Mx9" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5W_NWFc9Mxa" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5W_NWFc9Mxb" role="1PaTwD">
+            <property role="3oM_SC" value="type" />
+          </node>
+          <node concept="3oM_SD" id="5W_NWFc9Mxc" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5W_NWFc9Mxd" role="1PaTwD">
+            <property role="3oM_SC" value="its" />
+          </node>
+          <node concept="3oM_SD" id="5W_NWFc9Mxe" role="1PaTwD">
+            <property role="3oM_SC" value="target" />
+          </node>
         </node>
       </node>
       <node concept="1Z5TYs" id="5_h7KHAiHBh" role="3cqZAp">
@@ -250,7 +285,7 @@
                 <ref role="3cqZAo" node="7X0VHIfPTlg" resolve="expectedType" />
               </node>
             </node>
-            <node concept="1YBJjd" id="7s8sIq1_UI$" role="2OEOjV">
+            <node concept="1YBJjd" id="7s8sIq1_UI$" role="1urrMF">
               <ref role="1YBMHb" node="7s8sIq1_Q99" resolve="fieldAssignment" />
             </node>
           </node>
@@ -314,7 +349,7 @@
               <ref role="2pJxaS" to="95or:7s8sIq1Cevn" resolve="ClassType" />
               <node concept="2pIpSj" id="7s8sIq1Cf0E" role="2pJxcM">
                 <ref role="2pIpSl" to="95or:7s8sIq1Cevo" resolve="forClass" />
-                <node concept="36biLy" id="7s8sIq1Cf13" role="2pJxcZ">
+                <node concept="36biLy" id="7s8sIq1Cf13" role="28nt2d">
                   <node concept="2OqwBi" id="7s8sIq1CfbH" role="36biLW">
                     <node concept="1YBJjd" id="7s8sIq1Cf1y" role="2Oq$k0">
                       <ref role="1YBMHb" node="7s8sIq1CevS" resolve="newExpression" />
@@ -378,8 +413,46 @@
     <property role="3GE5qa" value="expression" />
     <node concept="3clFbS" id="7X0VHIfPOGd" role="18ibNy">
       <node concept="3SKdUt" id="7X0VHIfR2NV" role="3cqZAp">
-        <node concept="3SKdUq" id="7X0VHIfR2NX" role="3SKWNk">
-          <property role="3SKdUp" value="The type of a FieldAssignment is the type of the field being assigned" />
+        <node concept="1PaTwC" id="5W_NWFc9Mxf" role="1aUNEU">
+          <node concept="3oM_SD" id="5W_NWFc9Mxg" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="5W_NWFc9Mxh" role="1PaTwD">
+            <property role="3oM_SC" value="type" />
+          </node>
+          <node concept="3oM_SD" id="5W_NWFc9Mxi" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5W_NWFc9Mxj" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="5W_NWFc9Mxk" role="1PaTwD">
+            <property role="3oM_SC" value="FieldAssignment" />
+          </node>
+          <node concept="3oM_SD" id="5W_NWFc9Mxl" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5W_NWFc9Mxm" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5W_NWFc9Mxn" role="1PaTwD">
+            <property role="3oM_SC" value="type" />
+          </node>
+          <node concept="3oM_SD" id="5W_NWFc9Mxo" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5W_NWFc9Mxp" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5W_NWFc9Mxq" role="1PaTwD">
+            <property role="3oM_SC" value="field" />
+          </node>
+          <node concept="3oM_SD" id="5W_NWFc9Mxr" role="1PaTwD">
+            <property role="3oM_SC" value="being" />
+          </node>
+          <node concept="3oM_SD" id="5W_NWFc9Mxs" role="1PaTwD">
+            <property role="3oM_SC" value="assigned" />
+          </node>
         </node>
       </node>
       <node concept="1Z5TYs" id="7X0VHIfPP6j" role="3cqZAp">
@@ -456,7 +529,7 @@
                         <ref role="2pJxaS" to="95or:7s8sIq1Cevn" resolve="ClassType" />
                         <node concept="2pIpSj" id="7X0VHIfQlyJ" role="2pJxcM">
                           <ref role="2pIpSl" to="95or:7s8sIq1Cevo" resolve="forClass" />
-                          <node concept="36biLy" id="7X0VHIfQlDl" role="2pJxcZ">
+                          <node concept="36biLy" id="7X0VHIfQlDl" role="28nt2d">
                             <node concept="37vLTw" id="7X0VHIfQlIa" role="36biLW">
                               <ref role="3cqZAo" node="7X0VHIfQlgr" resolve="it" />
                             </node>

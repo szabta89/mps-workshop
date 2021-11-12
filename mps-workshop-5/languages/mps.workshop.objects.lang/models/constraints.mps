@@ -2,10 +2,10 @@
 <model ref="r:f11e8626-053b-4e54-b5af-f63789301af6(mps.workshop.objects.lang.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="4" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
@@ -38,11 +38,8 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
@@ -68,6 +65,14 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
   </registry>
@@ -103,15 +108,35 @@
       <node concept="QB0g5" id="7X0VHIfQub8" role="QCWH9">
         <node concept="3clFbS" id="7X0VHIfQub9" role="2VODD2">
           <node concept="3SKdUt" id="7X0VHIfQwKm" role="3cqZAp">
-            <node concept="3SKdUq" id="7X0VHIfQwKo" role="3SKWNk">
-              <property role="3SKdUp" value="Ensure class names are valid Java identifiers" />
+            <node concept="1PaTwC" id="5W_NWFc9MwN" role="1aUNEU">
+              <node concept="3oM_SD" id="5W_NWFc9MwO" role="1PaTwD">
+                <property role="3oM_SC" value="Ensure" />
+              </node>
+              <node concept="3oM_SD" id="5W_NWFc9MwP" role="1PaTwD">
+                <property role="3oM_SC" value="class" />
+              </node>
+              <node concept="3oM_SD" id="5W_NWFc9MwQ" role="1PaTwD">
+                <property role="3oM_SC" value="names" />
+              </node>
+              <node concept="3oM_SD" id="5W_NWFc9MwR" role="1PaTwD">
+                <property role="3oM_SC" value="are" />
+              </node>
+              <node concept="3oM_SD" id="5W_NWFc9MwS" role="1PaTwD">
+                <property role="3oM_SC" value="valid" />
+              </node>
+              <node concept="3oM_SD" id="5W_NWFc9MwT" role="1PaTwD">
+                <property role="3oM_SC" value="Java" />
+              </node>
+              <node concept="3oM_SD" id="5W_NWFc9MwU" role="1PaTwD">
+                <property role="3oM_SC" value="identifiers" />
+              </node>
             </node>
           </node>
           <node concept="3clFbF" id="7X0VHIfQuig" role="3cqZAp">
             <node concept="2OqwBi" id="7X0VHIfQvNp" role="3clFbG">
               <node concept="1Wqviy" id="7X0VHIfQvqP" role="2Oq$k0" />
               <node concept="liA8E" id="7X0VHIfQw8m" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
                 <node concept="Xl_RD" id="7X0VHIfQwgf" role="37wK5m">
                   <property role="Xl_RC" value="(?:\\b[_a-zA-Z]|\\B\\$)[_$a-zA-Z0-9]*+" />
                 </node>
@@ -130,15 +155,35 @@
       <node concept="QB0g5" id="7X0VHIfSLx0" role="QCWH9">
         <node concept="3clFbS" id="7X0VHIfSLx1" role="2VODD2">
           <node concept="3SKdUt" id="7X0VHIfSLC9" role="3cqZAp">
-            <node concept="3SKdUq" id="7X0VHIfSLCa" role="3SKWNk">
-              <property role="3SKdUp" value="Ensure field names are valid Java identifiers" />
+            <node concept="1PaTwC" id="5W_NWFc9MwV" role="1aUNEU">
+              <node concept="3oM_SD" id="5W_NWFc9MwW" role="1PaTwD">
+                <property role="3oM_SC" value="Ensure" />
+              </node>
+              <node concept="3oM_SD" id="5W_NWFc9MwX" role="1PaTwD">
+                <property role="3oM_SC" value="field" />
+              </node>
+              <node concept="3oM_SD" id="5W_NWFc9MwY" role="1PaTwD">
+                <property role="3oM_SC" value="names" />
+              </node>
+              <node concept="3oM_SD" id="5W_NWFc9MwZ" role="1PaTwD">
+                <property role="3oM_SC" value="are" />
+              </node>
+              <node concept="3oM_SD" id="5W_NWFc9Mx0" role="1PaTwD">
+                <property role="3oM_SC" value="valid" />
+              </node>
+              <node concept="3oM_SD" id="5W_NWFc9Mx1" role="1PaTwD">
+                <property role="3oM_SC" value="Java" />
+              </node>
+              <node concept="3oM_SD" id="5W_NWFc9Mx2" role="1PaTwD">
+                <property role="3oM_SC" value="identifiers" />
+              </node>
             </node>
           </node>
           <node concept="3clFbF" id="7X0VHIfSLCb" role="3cqZAp">
             <node concept="2OqwBi" id="7X0VHIfSLCc" role="3clFbG">
               <node concept="1Wqviy" id="7X0VHIfSLCd" role="2Oq$k0" />
               <node concept="liA8E" id="7X0VHIfSLCe" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
                 <node concept="Xl_RD" id="7X0VHIfSLCf" role="37wK5m">
                   <property role="Xl_RC" value="(?:\\b[_a-zA-Z]|\\B\\$)[_$a-zA-Z0-9]*+" />
                 </node>

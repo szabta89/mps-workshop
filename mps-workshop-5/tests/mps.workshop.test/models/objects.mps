@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:463f2f0d-2452-44ed-9730-ad165a96f360(mps.workshop.test.objects)" doNotGenerate="true">
+<model ref="r:463f2f0d-2452-44ed-9730-ad165a96f360(mps.workshop.test.objects)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="true" />
   <languages>
     <use id="b7056d5f-55b8-4462-92f4-3bd3f8af9c29" name="mps.workshop.objects.lang" version="0" />
     <use id="c9c683f9-1916-4ea4-bc6e-ec5b2a10659d" name="mps.workshop.lang" version="0" />
